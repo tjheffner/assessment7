@@ -4,8 +4,8 @@
         <p ng-repeat="item in students">
           <strong>{{ item.name }}</strong>
 
-            <button class="btn btn-xs btn-warning" ng-click="here = true">Sign In</button>
-            <button class="btn btn-xs btn-info" ng-click="here = false">Sign Out</button>
+            <button ng-hide="here === true" class="btn btn-xs btn-warning" ng-click="here = true">Sign In</button>
+            <button ng-show="here === true" class="btn btn-xs btn-info" ng-click="here = false">Sign Out</button>
 
         </p>
       </ul>

@@ -1,4 +1,5 @@
 studentsRoster.factory('StudentsFactory', function StudentsFactory() {
+
   var factory = {};
   factory.students = [{Jesse Pinkman, false},
                       {Walter White, false},
@@ -14,5 +15,7 @@ studentsRoster.factory('StudentsFactory', function StudentsFactory() {
                       {Howard Hamlin, false},
                       {Kim Wexler, false},
                      ];
+
+  return factory;
 
 });

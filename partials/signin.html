@@ -1,9 +1,12 @@
 <div ng-show="students.length">
   <h1>Please sign in:</h1>
-  <ul>
-    <li ng-repeat="item in students">
-      {{ item.name }} <button>Sign In</button>
+      <ul>
+        <p ng-repeat="item in students">
+          <strong>{{ item.name }}</strong>
 
-    </li>
-  </ul>
+            <button class="btn btn-xs btn-warning" ng-click="here = true">Sign In</button>
+            <button class="btn btn-xs btn-info" ng-click="here = false">Sign Out</button>
+
+        </p>
+      </ul>
 </div>

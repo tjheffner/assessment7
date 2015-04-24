@@ -2,7 +2,7 @@
 <html lang="en" ng-app="studentsRoster">
   <head>
     <meta charset="UTF-8">
-    <title>Course Roster</title>
+    <title>Assessment 7: Student Roster/ Sign In</title>
     <script src="lib/angular.js"></script>
     <script src="lib/angular-ui-router.js"></script>
     <script src="app.js"></script>
@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="container">
-      <p><a href="#/signin">Sign In</a> | <a href="#/roster">Roster</a></p>
+      <p><a ui-sref="home">Home</a> | <a ui-sref="signin">Sign In</a> | <a ui-sref="roster">Roster</a></p>
       <div ui-view></div>
     </div>
   </body>

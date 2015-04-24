@@ -1,0 +1,18 @@
+<div ng-show="students.length">
+  <h1>Who's Here:</h1>
+      <ul>
+        <p ng-repeat="item in filtered = (students | filter:{here: true})">
+          <strong>{{ item.name }}</strong>
+
+        </p>
+      </ul>
+
+  <h1>Who's Not:</h1>
+      <ul>
+        <p ng-repeat="item in filtered = (students | filter:{here: false})">
+          <strong>{{ item.name }}</strong>
+
+        </p>
+      </ul>
+
+</div>
